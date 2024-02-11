@@ -11,12 +11,12 @@ function strong(string){
     return `<strong>${string}</strong>`;
 }
 
-const template = strong('making things useful');
+const template = strong('Making things useful');
 console.log(template);
 
 //Adding text using insertAdjacentHTML()
-const updateInnerHTMLAdjacent = function (selector, htmlString){
+const updateInnerAdjacentHTML = function (selector, htmlString){
     document.querySelector(selector).insertAdjacentHTML('beforeend', htmlString);
 }
 
-updateInnerHTMLAdjacent('section',template);
+updateInnerAdjacentHTML('section',template);
